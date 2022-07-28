@@ -1,26 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="overflow-x-hidden">
+    <Hero />
+    <Incentives />
+    <ProductsCart />
+    <Rooms />
+    <Tips />
+    <Furnitures />
+    <Footer />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Hero from "./components/Hero.vue";
+import Incentives from "./components/Incentives.vue";
+import ProductsCart from "./components/ProductsCart.vue";
+import Rooms from "./components/RoomsSlider.vue";
+import Tips from "./components/Tips.vue";
+import Footer from "./components/Footer.vue";
+import Furnitures from "./components/Furniture.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Hero,
+    Incentives,
+    ProductsCart,
+    Rooms,
+    Tips,
+    Furnitures,
+    Footer,
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
